@@ -202,7 +202,7 @@ void HCTree::adaptive_encode(byte symbol, BitOutputStream &out)
         node = node->p;
     }
 
-    while (node->p) {
+    while (node && node->p) {
         node = transform(node);
         node = node->p;
         node->count++;

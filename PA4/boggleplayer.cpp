@@ -7,7 +7,6 @@
 //
 
 #include "boggleplayer.h"
-#include "boggleboard.h"
 #include <cstdlib>
 #include <algorithm>
 
