@@ -280,7 +280,7 @@ byte HCTree::adaptive_decode(BitInputStream &in)
     if (node->count == 1) {
         node = node->p;
     }
-    while (node->p) {
+    while (node && node->p) {
         node = transform(node);
         node = node->p;
         node->count++;
